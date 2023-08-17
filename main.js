@@ -19,11 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
     input.value = "";
     checarInput(input, inputBoton);
   }
-
-  for (let i = 1; i <= 3; i++) {
-    
-  }
-  obtenerTareas(3, 5); //* Obtiene tareas todo de JsonPlaceholder para poner en la lista
+  
+  //obtenerTareas(3, 5); //* Obtiene tareas todo de JsonPlaceholder para poner en la lista
 
   checarTareas(); //* Verificar si al inicio de la pagina si hay o no tareas completadas
   checarInput(input, inputBoton); //* Verificar si al inicio de la pagina hay algo en el input
