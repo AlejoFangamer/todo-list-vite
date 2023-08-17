@@ -1,3 +1,13 @@
+//? Esta funcion verifica cuantas tareas hay completadas o no
+
+//* Primer if:
+//? En caso de que hayan tareas, Deslizar el contador de tareas 
+//? En caso de que no, Ocultar el contador de tareas
+
+//* Segundo if:
+//? En caso de que se hayan completado todas las tareas, Cambiar el texto del contador de tareas y ponerle una pequeña animacion
+//? En caso de que no, Seguir con el contador quitandole la animacion si es que la tenia
+
 export function checarTareas() {
   const contenedor = document.querySelector("#contenedor");
   const marcador = document.querySelector("#marcador");
