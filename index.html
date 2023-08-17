@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div id="fondo"></div>
+    <main>
+      <h2>To-Do List</h2>
+      <div id="pirobo">
+        <div id="contenedor">
+          <div id="contenedor-input">
+            <input type="text" placeholder="Escribe algo..." id="input-tarea" />
+            <button id="summit-tarea"><box-icon name="plus"></box-icon></button>
+          </div>
+          <ul id="lista">
+            <template id="lista-template">
+              <li class="elemento">
+                <div class="botones hecho">
+                  <box-icon name="check" color="#fff"></box-icon>
+                </div>
+
+                <h3 class="elemento-lista"></h3>
+                <img src="./iconos/Borrar.svg" class="botones borrar" />
+              </li>
+            </template>
+          </ul>
+        </div>
+        <div id="marcador-contenedor">
+          <h3 id="marcador">Hola</h3>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script type="module" src="/main.js"></script>
+    <!-- <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
