@@ -189,6 +189,9 @@ main h2 {
 }
 
 .borrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
 
@@ -196,6 +199,10 @@ main h2 {
 
   cursor: pointer;
   transform: scale(100%);
+}
+
+.borrar img {
+  width: 100%;
 }
 
 .borrar:hover {
