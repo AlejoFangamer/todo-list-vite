@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
 }
 
 @keyframes opacidad {
@@ -24,7 +25,7 @@ body {
 }
 
 #fondo {
-  position: absolute;
+  position: fixed;
   background-color: #002b5b;
   width: 100%;
   height: 100vh;
@@ -57,12 +58,13 @@ main h2 {
   max-width: 600px;
   width: 100%;
   padding: 30px;
+  height: 100%;
 }
 
 #contenedor {
   position: relative;
-  top: 25px;
   width: 100%;
+
 
   background-color: #f9f5eb;
   text-align: center;
@@ -126,6 +128,7 @@ main h2 {
 #lista {
   list-style: none;
   padding: 0px 30px;
+  height: 100%;
   max-height: 410px;
   overflow: auto;
 }
@@ -200,6 +203,7 @@ main h2 {
 }
 
 .hecho {
+  content: "";
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -216,6 +220,7 @@ main h2 {
 .hecho box-icon {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .hecho::before {
@@ -297,3 +302,13 @@ main h2 {
   color: #002b5b;
 }
 
+@media screen and (max-width: 420px){
+  #contenedor-input {
+    padding: 5px 25px;
+    background: #c54444;
+  }
+  
+  .elemento {
+    font-size: 13px;
+  }
+}
