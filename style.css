@@ -128,6 +128,7 @@ main h2 {
   padding: 0px 30px;
   max-height: 410px;
   overflow: auto;
+  scrollbar-gutter: stable both-edges;
 }
 
 ::-webkit-scrollbar {
