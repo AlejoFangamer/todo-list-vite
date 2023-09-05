@@ -10,8 +10,8 @@
   <body>
     <div id="fondo"></div>
     <main>
-      <h2>To-Do List</h2>
       <div id="pirobo">
+        <h2>To-Do List</h2>
         <div id="contenedor">
           <div id="contenedor-input">
             <input type="text" placeholder="Escribe algo..." id="input-tarea" />
@@ -23,9 +23,10 @@
                 <div class="botones hecho">
                   <box-icon name="check" color="#fff"></box-icon>
                 </div>
-
                 <h3 class="elemento-lista"></h3>
-                <img src="./iconos/Borrar.svg" class="botones borrar" />
+                <div class="botones borrar">
+                  <img src="./iconos/Borrar.svg" class="botones" />
+                </div>
               </li>
             </template>
           </ul>

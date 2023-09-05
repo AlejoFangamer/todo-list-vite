@@ -33,6 +33,10 @@ El reto consiste en construir una aplicación de TODO, que tenga las siguientes 
 
 https://todo-app-fg.vercel.app/
 
+## Resultado Final
+
+https://lista-alejo.vercel.app/
+
 ## ¿Cómo ejecutar el proyecto?
 
 ```bash

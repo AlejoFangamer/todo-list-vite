@@ -12,15 +12,15 @@ const lista = document.querySelector("#lista"); //? Seleccionar la lista a la qu
 const input = document.querySelector("#input-tarea"); //? Seleccionar la caja de input
 const inputBoton = document.querySelector("#summit-tarea"); //? Seleccionar el boton para agregar tareas
 
+function crearNuevaTarea() {
+  crearTarea(lista, input.value);
+  input.value = "";
+  checarInput(input, inputBoton);
+}
+
 //! Verifica si el dom se ha cargado de forma correcta para continuar
 window.addEventListener("DOMContentLoaded", () => {
-  function crearNuevaTarea() {
-    crearTarea(lista, input.value);
-    input.value = "";
-    checarInput(input, inputBoton);
-  }
-  
-  //obtenerTareas(3, 5); //* Obtiene tareas todo de JsonPlaceholder para poner en la lista
+  //obtenerTareas(3, 3); //* Obtiene tareas todo de JsonPlaceholder para poner en la lista
 
   checarTareas(); //* Verificar si al inicio de la pagina si hay o no tareas completadas
   checarInput(input, inputBoton); //* Verificar si al inicio de la pagina hay algo en el input
